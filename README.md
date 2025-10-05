@@ -54,7 +54,7 @@ Antes de executar o projeto, certifique-se de ter instalado:
 
 3. Execute as migrações do Prisma para criar as tabelas no banco:
    ```bash
-   npx prisma migrate deploy
+   npx prisma migrate dev --name <nome-da-migration>
    ```
 
 4. (Opcional) Gere o cliente Prisma:
@@ -129,6 +129,7 @@ Squad 6
 ## Autor
 
 Patrick Santos da Silva
+
 
 
 
