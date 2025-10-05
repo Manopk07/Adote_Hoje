@@ -1,4 +1,4 @@
-# Adoção de Pets
+# Adote Hoje - Bootcamp Avanti Desenvolvimento Full-stack 2025.3
 
 Este é um projeto de API REST desenvolvido em Node.js para um sistema de adoção de pets. O projeto faz parte do Bootcamp da Avanti e permite gerenciar pets, adotantes, adoções e usuários com autenticação e autorização.
 
@@ -117,15 +117,14 @@ prisma/
 
 ## Contribuição
 
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
-3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/nova-feature`)
-5. Abra um Pull Request
+Squad 6
 
-## Licença
-
-Este projeto está sob a licença ISC.
+- Patrick Santos: Desenvolvimento do BackEnd e do Banco de Dados
+- Marcelo Motta: Ausente devido a questões pessoais
+- Cesar Carvalho: Ausente
+- Moisés Dcf: Ausente
+- Réges: Ausente
+- Jeannine Araújo: Ausente
 
 ## Autor
 

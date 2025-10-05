@@ -37,6 +37,7 @@ enum Personalidade {
   AGRESSIVO
 }
 
+// --- Tabela para armazenar os usuários ---
 model User {
   id_user       String  @id @default(uuid())
   nome_user     String  
@@ -45,6 +46,7 @@ model User {
   is_admin      Boolean @default(false)
 }
 
+// --- Tabela para armazenar os pets ---
 model Pet {
   id_pet        String  @id @default(uuid())
   nome_pet      String  @db.VarChar(100)
@@ -60,6 +62,7 @@ model Pet {
   @@map("pets")
 }
 
+// --- Tabela para armazenar os adotantes --- 
 model Adotante {
   id_adotante   String  @id @default(uuid())
   nome_adotante String  @db.VarChar(100)
@@ -71,6 +74,7 @@ model Adotante {
   @@map("adotantes")
 }
 
+// --- Tabela para registrar as adoções ---
 model Adocao {
   id_adocoes    String   @id @default(uuid())
   data_adocao   DateTime
