@@ -1,4 +1,4 @@
-# Adoção de Pets
+# Adote Hoje - Bootcamp Avanti Desenvolvimento Full-stack 2025.3
 
 Este é um projeto de API REST desenvolvido em Node.js para um sistema de adoção de pets. O projeto faz parte do Bootcamp da Avanti e permite gerenciar pets, adotantes, adoções e usuários com autenticação e autorização.
 
@@ -129,5 +129,6 @@ Squad 6
 ## Autor
 
 Patrick Santos da Silva
+
 
 
