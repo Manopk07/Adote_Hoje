@@ -117,8 +117,16 @@ prisma/
 
 ## Contribuição
 
-BackEnd & Banco de Dados: Desenvolvido pelo Patrick Santos da Silva
+Squad 6
+
+Patrick Santos: Desenvolvimento do BackEnd e do Banco de Dados
+Marcelo Motta: Ausente devido a questões pessoais
+Cesar Carvalho: Ausente
+Moisés Dcf: Ausente
+Réges: Ausente
+Jeannine Araújo: Ausente
 
 ## Autor
 
 Patrick Santos da Silva
+
