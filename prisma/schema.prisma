@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Status {
+  DISPONIVEL
+  ADOTADO
+  INDISPONIVEL
+}
+
+enum Sexo {
+  MACHO
+  FEMEA
+}
+
+enum Especie {
+  CACHORRO
+  GATO
+  PEIXE
+  TARTARUGA
+}
+
+enum Tamanho {
+  PEQUENO
+  MEDIO
+  GRANDE
+}
+
+enum Personalidade {
+  BRINCALHAO
+  CALMO
+  AGRESSIVO
+}
+
+model User {
+  id_user       String  @id @default(uuid())
+  nome_user     String  
+  email_user    String  @unique
+  senha         String  
+  is_admin      Boolean @default(false)
+}
+
+model Pet {
+  id_pet        String  @id @default(uuid())
+  nome_pet      String  @db.VarChar(100)
+  idade         Int?
+  descricao     String? @db.VarChar(255)
+  status        Status
+  especie       Especie
+  tamanho       Tamanho
+  personalidade String? @db.VarChar(20)
+  sexo          Sexo
+  adocoes       Adocao[]
+
+  @@map("pets")
+}
+
+model Adotante {
+  id_adotante   String  @id @default(uuid())
+  nome_adotante String  @db.VarChar(100)
+  email         String  @unique
+  telefone      String? @db.VarChar(15)
+  endereco      String? @db.VarChar(255)
+  adocoes       Adocao[]
+
+  @@map("adotantes")
+}
+
+model Adocao {
+  id_adocoes    String   @id @default(uuid())
+  data_adocao   DateTime
+  id_adotante   String 
+  id_pet        String 
+  pet           Pet      @relation(fields: [id_pet], references: [id_pet])
+  adotante      Adotante @relation(fields: [id_adotante], references: [id_adotante])
+
+  @@unique([id_pet])
+  @@map("adocoes")
+}

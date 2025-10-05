@@ -1,0 +1,22 @@
+{
+  "name": "adocao_de_pets",
+  "version": "1.0.0",
+  "description": "Projeto do Bootcamp da Avanti com finalidade de criar um sistema de adoção de pets",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "author": "Patrick Santos da Silva",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.16.2",
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.10",
+    "pg": "^8.16.3",
+    "prisma": "^6.16.2"
+  }
+}
